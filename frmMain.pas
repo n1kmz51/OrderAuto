@@ -112,6 +112,11 @@ end;
 
 {Функция получения цифрового номера накладной из строкового идентификатора и даты}
 function getNaklLngID (strID: String; dtDate: TDateTime): LongInt;
+var
+  firstYear : Integer;
+  lastYear : Integer;
+  numOfMonth : Integer;
+  endDate : TDateTime;
 begin
   If Ord(strID[1]) < 58 Then Result := StrToInt(strID)
   else
@@ -119,8 +124,13 @@ begin
       Result := (Ord(strID[1]) - 87) * 1000;
       Result := Result + StrToInt(Copy(strID,2,Length(strID)));
     end;
-  //Result := Result + 100000 * Ceil(MonthSpan(EncodeDate(2009, 12, 31),dtDate)) + 100000000;
-  Result := Result + 100000 * (72 + MonthOfTheYear(dtDate)) + 100000000;
+
+  firstYear :=   2010;//Год начала новой нумерации
+  endDate := Now;//Текущая дата
+  lastYear := YearOf(endDate); //Текущий год
+  numOfMonth := (lastYear - firstYear) * 12 + MonthOf(endDate); //Номер текущего месяца с 01.01.01.2010 г.
+
+  Result := Result + 100000 * (numOfMonth) + 100000000; //Результирующий номер накладной
 end;
 
 {Функция для нахождения записи в DataSet}
