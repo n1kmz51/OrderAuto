@@ -1,0 +1,54 @@
+[DSP upload]
+File Name=cds.zip
+Replace File=
+File Status=Freeware
+Full Source Included=Y
+Delphi 1.0x=N
+Delphi 2.0x=N
+Delphi 3.0x=N
+Delphi 4.0x=N
+Delphi 5.0x=Y
+Delphi 6.0x=Y
+C++ Builder 1.0x=N
+C++ Builder 3.0x=N
+C++ Builder 4.0x=N
+C++ Builder 5.0x=N
+Kylix=N
+Version=1.0 22.6.6
+count=7
+1=TClarionDataSet.
+2=TDataSet descendant component with read and write access to Clarion
+3=v2.X tables. Memo fields read/write support.
+4=
+5=It was also tested on Delphi 7, but I think it will run on other Delphi or
+6=C++Builder versions without (or with small) changes.
+7=Last Release can be found at http://izpages.narod.ru/public/cla/cla.htm
+Note=This package was initially developed by Dmitry Kudryavtsev.
+Additional info=Text file ( extension txt )
+Category=Apps WITH sources
+Platform=
+Group=Component/Code
+[Versions available]
+Delphi 1.0x=
+Delphi 2.0x=
+Delphi 3.0x=
+Delphi 4.0x=
+Delphi 5.0x=
+Delphi 6.0x=
+C++ Builder 1.0x=
+C++ Builder 3.0x=
+C++ Builder 4.0x=
+C++ Builder 5.0x=
+Kylix=
+[DSP Support]
+DSP Support=Y
+[Uploader_1]
+Author name=Igor Zakhrebetkov
+Contact=
+Author E-mail=
+Author URL=http://izpages.narod.ru
+count=2
+1=
+2=
+Author Section=DataBase Programming
+UpdateDSP=N

@@ -1,0 +1,89 @@
+                        CLARION TOOLKIT AGE II
+                           TClarionDataSet
+                  Copyright (C) by Dmitry Kudryavtsev
+                       Under GNU Public License
+
+  TClarionDataSet - TDataSet descendant component with read
+                    and write access to Clarion v2.X tables.
+                    Memo fields support.
+                    No Clarion Arrays and Indexes (yet :-)...
+
+TClarionDataSet based on VCL's TDataSet an Clarion Toolkit v1.X.
+This package was initially developed on Delphi 5, but I think it will run
+on other Delphi or C++Builder versions without (or with small) changes.
+
+Now modified and maintained by Igor Zakhrebetkov <igorz@realty.elcom.ru>
+Last Release can be found at http://izpages.narod.ru/public/cla/cla.htm
+
+Main last changes since 1.1.2004:
+    ftDate field is added;
+    procedure CreateTable is added;
+    Changes in GetFieldData & SetFieldData;
+       eliminating trash after string end
+
+History
+
+ 22.06.06
+    Editing and Inserting of MEMO field
+
+ 14.06.06
+    Corrections in Internal Open for reading of PictureRecord and ArrayRecord
+    Option USE_CLARION_ACCESS is defined     
+    
+ 12.06.06
+    Corrections in InternalOpen & CreateTable for usage of Persistent Fields
+
+ 18.07.05
+    Trimming of ftString Fields
+
+  4.04.05
+    Changes in Header.LogEOF  - for compatibility with Clarion for Win
+
+ 15.03.05
+    Changes with ftDATE Field Type in GetFieldData & SetFieldData
+           for better processing of Empty Date Field
+
+  2.03.05
+    Changes in  GetRecord
+       Buffer is cleared when file is empty
+
+  4.02.05
+    Changes in SetFieldData
+       eliminating trash after string end
+
+ 18.12.04
+    Memo decryption in TClarionMemoStream.Read
+
+  5.11.04
+    Property DeletedRecordCount
+    Corrections in Methods - no FHeader.NumDels
+          GetRecordCount,
+          InternalLast
+
+  1.09.04
+    procedure CreateTable is added
+
+  1.01.04
+    ftDate field type is added
+
+
+News for v0.91
+--------------
+  + Memo fields writing
+  + BlobToCache property
+  * bugfix
+
+Version 0.90
+------------
+  First public beta. Open Source release.
+
+Any comments and suggestions
+----------------------------
+Dmitry Kudryavtsev
+RUSSIA, Volgograd, 2000
+E-Mail: juliasoft@mail.ru
+FIDO:   2:5055/24
+
+Igor Zakhrebetkov 
+E-Mail: <igurza at rambler.ru>
+HTTP: http://izpages.narod.ru
